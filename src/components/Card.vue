@@ -55,10 +55,27 @@ export default {
   &.estagio {
     margin-bottom: 25px;
 
-    .titulo_empresa {
-      font-weight: bold;
-      font-size: 15px;
-      margin-bottom: 10px;
+    .call-estagio {
+      cursor: pointer;
+
+      .titulo_empresa {
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .info-estagio {
+      margin-top: 20px;
+
+      b {
+        font-size: 0.8rem;
+      }
+
+      small {
+        display: block;
+        margin-bottom: 5px;
+      }
     }
   }
 }

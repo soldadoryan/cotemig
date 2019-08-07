@@ -6,6 +6,7 @@ import Avisos from './pages/Avisos.vue'
 import NotasFaltas from './pages/NotasFaltas.vue'
 import AreaDeArquivos from './pages/AreaDeArquivos.vue'
 import Estagios from './pages/Estagios.vue'
+import QuadroDeHorario from './pages/QuadroDeHorario.vue'
 // import Erro404 from './pages/Erro404.vue'
 
 Vue.config.productionTip = false;
@@ -18,6 +19,7 @@ const rotas = {
   '/notas-e-faltas': NotasFaltas,
   '/area-de-arquivos': AreaDeArquivos,
   '/estagios': Estagios,
+  '/quadro-de-horarios': QuadroDeHorario,
 }
 
 new Vue({

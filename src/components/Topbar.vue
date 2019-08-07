@@ -8,7 +8,7 @@
     </div>
     <ul class="opcoes">
       <li>
-        <button class="btn-horarios">
+        <button class="btn-horarios" @click="irHorarios">
           <img src="img/topbar/quadro_de_horarios.png">
           Quadro de horários
         </button>
@@ -25,6 +25,11 @@
 export default {
   props: {
     ultimoAcesso: String,
+  },
+  methods: {
+    irHorarios () {
+      window.location="/quadro-de-horarios";
+    }
   }
 }
 </script>
@@ -73,6 +78,7 @@ $p-color: #64b145;
   right: 0;
   height: 60px;
   box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.33);
+  z-index: 1050;
 
   .ultimo-acesso {
     height: 100%;

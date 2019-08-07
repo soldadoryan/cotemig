@@ -9,10 +9,11 @@
       <small>{{grupo}} - {{cursoSigla}}</small>
     </div>
     <ul class="itens-menu">
-      <li @click="ir('/avisos')" :class="{active: (menuMarcado == 0)}"><img src="img/menu/quadro_de_avisos.png"> Quadro de avisos</li>
-      <li @click="ir('/notas-e-faltas')" :class="{active: (menuMarcado == 1)}"><img src="img/menu/notas_e_faltas.png"> Notas e faltas</li>
-      <li @click="ir('/area-de-arquivos')" :class="{active: (menuMarcado == 2)}"><img src="img/menu/area_de_arquivos.png"> Área de arquivos</li>
-      <li @click="ir('/estagios')" :class="{active: (menuMarcado == 3)}"><img src="img/menu/estagios.png"> Estágios</li>
+      <li @click="ir('/avisos')" :class="{active: (menuMarcado == 0)}"><i class="fas fa-bullhorn"></i> Quadro de avisos</li>
+      <li @click="ir('/notas-e-faltas')" :class="{active: (menuMarcado == 1)}"><i class="fas fa-chart-line"></i> Notas e faltas</li>
+      <li @click="ir('/area-de-arquivos')" :class="{active: (menuMarcado == 2)}"><i class="fas fa-archive"></i> Área de arquivos</li>
+      <li @click="ir('/estagios')" :class="{active: (menuMarcado == 3)}"><i class="fas fa-briefcase"></i> Estágios</li>
+      <li @click="ir('/quadro-de-horarios')" :class="{active: (menuMarcado == 4)}"><i class="fas fa-chalkboard-teacher"></i> Horários</li>
     </ul>
   </div>
 </template>
@@ -38,6 +39,9 @@
         break;
         case "/estagios":
           this.menuMarcado = 3;
+        break;
+        case "/quadro-de-horarios":
+          this.menuMarcado = 4;
         break;
       }
     },
@@ -123,11 +127,9 @@
         cursor: pointer;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
-        img {
+        i {
           display: inline-block;
           vertical-align: middle;
-          height: 24px;
-          margin-top: -4px;
           margin-right: 10px;
         }
 
